@@ -1,438 +1,184 @@
-/* Global styles */
-:root {
-  --bg: #0b0d11;
-  --bg-soft: #121821;
-  --panel: #171d27;
-  --panel-2: #1f2834;
-  --text: #eef3f8;
-  --muted: #b8c0cc;
-  --line: rgba(255,255,255,0.1);
-  --red: #ec1d25;
-  --red-soft: #ff4d4d;
-  --gold: #f4c95d;
-  --shadow: 0 15px 35px rgba(0,0,0,0.28);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUHASA SPORTS | Kart Racewears & Boxing Equipment Manufacturer</title>
+  <meta name="description" content="BUHASA SPORTS manufactures premium kart racewears, racing suits, boxing equipment, and OEM sportswear for teams, clubs, and distributors worldwide.">
+  <meta name="keywords" content="BUHASA SPORTS, kart racewears, kart racing suits, boxing equipment, boxing gloves, sportswear manufacturer, OEM sportswear, Pakistan sports factory">
+  <meta name="author" content="BUHASA SPORTS">
+  <meta property="og:title" content="BUHASA SPORTS | Kart Racewears & Boxing Equipment">
+  <meta property="og:description" content="Premium kart racing suits, gloves, protective gear, and boxing equipment manufactured by BUHASA SPORTS.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="BUHASA SPORTS home">
+        <img src="logo.png" alt="BUHASA SPORTS logo">
+        <span class="brand-name">BUHASA SPORTS</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="karting.html">Karting</a></li>
+          <li><a href="boxing-equipment.html">Boxing</a></li>
+          <li><a href="manufacturing.html">Manufacturing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg, #05070a 0%, #0c1016 100%);
-  color: var(--text);
-  line-height: 1.6;
-}
-a { color: inherit; }
-img { max-width: 100%; display: block; }
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Performance. Protection. Precision.</div>
+          <h1>Built for <span class="accent">speed</span>, strength, and victory.</h1>
+          <p class="lead">BUHASA SPORTS is a trusted name in kart racewears and boxing equipment, manufacturing premium performance gear for racers, fighters, teams, and worldwide distributors.</p>
+          <div class="tag-row">
+            <span class="tag">Kart racing suits</span>
+            <span class="tag">Boxing gloves</span>
+            <span class="tag">Protective gear</span>
+            <span class="tag">OEM manufacturing</span>
+          </div>
+          <div class="button-row">
+            <a href="karting.html" class="btn primary">Explore Karting</a>
+            <a href="boxing-equipment.html" class="btn secondary">Explore Boxing</a>
+          </div>
+        </div>
 
-.container {
-  width: min(1180px, calc(100% - 32px));
-  margin: 0 auto;
-}
+        <div class="hero-panel">
+          <div class="hero-image" role="img" aria-label="BUHASA SPORTS professional racing and boxing equipment" style="background-image: linear-gradient(135deg, rgba(236,29,37,0.35), rgba(0,0,0,0.55)), url('https://raw.githubusercontent.com/gndentalinstrument-design/BUHASASPORTS/main/BUHASA%20SPORTS%20KARTING%20SUIT.jpeg');"></div>
+          <div class="metrics">
+            <div class="metric">
+              <div class="metric-label">Karting</div>
+              <div class="metric-value">Racewears</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Boxing</div>
+              <div class="metric-value">Protective Gear</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Manufacturing</div>
+              <div class="metric-value">OEM / Private Label</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: rgba(10, 12, 15, 0.9);
-  border-bottom: 1px solid var(--line);
-  backdrop-filter: blur(14px);
-}
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 78px;
-  gap: 20px;
-}
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
-.brand img {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
-  border-radius: 12px;
-}
-.brand-name {
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 18px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.nav-links a {
-  color: var(--muted);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  transition: color 0.2s ease;
-}
-.nav-links a:hover,
-.nav-links a:focus {
-  color: var(--red-soft);
-}
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Our categories</div>
+            <h2 class="section-title">Professional sports equipment for every arena</h2>
+          </div>
+        </div>
 
-.hero {
-  padding: 60px 0 32px;
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 28px;
-  align-items: center;
-}
-.eyebrow {
-  display: inline-block;
-  color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
-  font-size: 12px;
-  margin-bottom: 18px;
-}
-h1 {
-  font-size: clamp(2.6rem, 4vw, 4.4rem);
-  line-height: 1.08;
-  margin: 0 0 18px;
-  letter-spacing: 1px;
-}
-.hero h1 .accent {
-  color: var(--red-soft);
-}
-.lead {
-  color: var(--muted);
-  font-size: 1.08rem;
-  max-width: 640px;
-}
-.tag-row {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin: 24px 0 28px;
-}
-.tag {
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.02);
-  border-radius: 999px;
-  padding: 8px 14px;
-  font-size: 11px;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.button-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  padding: 14px 22px;
-  font-size: 12px;
-  letter-spacing: 1.3px;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
-}
-.btn:hover { transform: translateY(-1px); }
-.btn.primary {
-  background: linear-gradient(135deg, var(--red), var(--red-soft));
-  box-shadow: 0 12px 28px rgba(236, 29, 37, 0.35);
-  color: #fff;
-}
-.btn.secondary {
-  color: var(--text);
-  border-color: var(--line);
-  background: rgba(255,255,255,0.01);
-}
-.hero-panel {
-  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
-  border: 1px solid var(--line);
-  border-radius: 26px;
-  padding: 18px;
-  box-shadow: var(--shadow);
-}
-.hero-image {
-  height: 420px;
-  border-radius: 20px;
-  background-image: linear-gradient(135deg, rgba(236,29,37,0.35), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1200&q=80');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-}
-.hero-badge {
-  position: absolute;
-  left: 18px;
-  bottom: 18px;
-  background: rgba(0,0,0,0.75);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 999px;
-  padding: 8px 12px;
-  font-size: 11px;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-}
-.metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  gap: 12px;
-  margin-top: 14px;
-}
-.metric {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 16px 14px;
-}
-.metric-label {
-  color: var(--muted);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-.metric-value {
-  margin-top: 8px;
-  font-size: 1.02rem;
-  font-weight: 700;
-  color: var(--red-soft);
-}
+        <div class="category-grid">
+          <article class="card highlight">
+            <div class="card-label">Kart Racing</div>
+            <h3>Kart Racewears</h3>
+            <p>Premium kart racing suits, gloves, rib protectors, and accessories designed for speed, safety, and comfort.</p>
+            <a href="karting.html" class="btn primary">View Categories</a>
+          </article>
 
-.section {
-  padding: 52px 0;
-}
-.section-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 20px;
-  margin-bottom: 22px;
-}
-.section-title {
-  margin: 0;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  letter-spacing: 0.7px;
-}
-.section-copy {
-  color: var(--muted);
-  max-width: 720px;
-}
-.feature-grid,
-.category-grid,
-.product-grid,
-.about-grid,
-.contact-grid {
-  display: grid;
-  gap: 20px;
-}
-.feature-grid {
-  grid-template-columns: repeat(3, minmax(0,1fr));
-}
-.category-grid {
-  grid-template-columns: repeat(2, minmax(0,1fr));
-}
-.product-grid {
-  grid-template-columns: repeat(3, minmax(0,1fr));
-}
-.card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 22px;
-  box-shadow: var(--shadow);
-}
-.card-label {
-  color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 1.6px;
-  font-size: 11px;
-  font-weight: 700;
-}
-.card h3 {
-  margin: 10px 0 10px;
-  font-size: 1.4rem;
-}
-.card p {
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-.card .btn {
-  padding: 10px 18px;
-}
+          <article class="card highlight">
+            <div class="card-label">Boxing</div>
+            <h3>Boxing Equipment</h3>
+            <p>High-performance boxing gloves, focus mitts, headguards, protective gear, and training essentials.</p>
+            <a href="boxing-equipment.html" class="btn primary">View Categories</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.product-card {
-  overflow: hidden;
-  padding: 0;
-}
-.product-image {
-  height: 220px;
-  background-size: cover;
-  background-position: center;
-}
-.product-body {
-  padding: 18px 20px 20px;
-}
-.product-body h3 {
-  margin: 0 0 8px;
-}
-.product-body p {
-  margin: 0 0 14px;
-}
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Why choose us</div>
+            <h2 class="section-title">Manufacturing quality built for champions</h2>
+          </div>
+        </div>
 
-.highlight {
-  background: linear-gradient(180deg, rgba(236,29,37,0.11), rgba(18,24,33,0.4));
-}
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0,1fr));
-  gap: 20px;
-}
-.step {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 22px;
-}
-.step-num {
-  width: 38px;
-  height: 38px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: rgba(236,29,37,0.15);
-  border: 1px solid rgba(236,29,37,0.25);
-  color: var(--red-soft);
-  font-weight: 700;
-  margin-bottom: 10px;
-}
+        <div class="feature-grid">
+          <article class="card">
+            <div class="card-label">01</div>
+            <h3>Performance Materials</h3>
+            <p>We use premium fabrics and protective components to ensure comfort, breathability, and reliable performance.</p>
+          </article>
 
-.page-banner {
-  padding: 54px 0 26px;
-  background: linear-gradient(180deg, rgba(236,29,37,0.08), rgba(18,24,33,0.3));
-  border-bottom: 1px solid var(--line);
-}
-.page-banner h1 {
-  margin-bottom: 8px;
-}
-.page-banner p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 1.05rem;
-}
+          <article class="card">
+            <div class="card-label">02</div>
+            <h3>Custom OEM Solutions</h3>
+            <p>Private label and custom manufacturing support for private distributors, teams, and brands around the world.</p>
+          </article>
 
-.inline-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 12px 24px;
-  margin-top: 20px;
-  padding-left: 20px;
-  color: var(--muted);
-}
+          <article class="card">
+            <div class="card-label">03</div>
+            <h3>Strict Quality Control</h3>
+            <p>Every batch is checked for durability, fit, finish, and compliance before shipment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.info-box {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 22px;
-}
-.info-box h3 {
-  margin-top: 0;
-}
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Featured product lines</div>
+            <h2 class="section-title">Top-selling categories</h2>
+          </div>
+        </div>
 
-.contact-card,
-.contact-form {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 24px;
-}
-.contact-grid {
-  grid-template-columns: 0.9fr 1.1fr;
-}
-.contact-form form {
-  display: grid;
-  gap: 12px;
-}
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  background: rgba(0,0,0,0.2);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  color: var(--text);
-  padding: 13px 14px;
-  font: inherit;
-}
-.contact-form textarea { min-height: 150px; resize: vertical; }
+        <div class="product-grid">
+          <article class="card product-card">
+            <div class="product-image" style="background-image:url('https://raw.githubusercontent.com/gndentalinstrument-design/BUHASASPORTS/main/BUHASA%20SPORTS%20KARTING%20SUIT.jpeg');"></div>
+            <div class="product-body">
+              <h3>Kart Race Suit</h3>
+              <p>High-grade kart racing suit designed for comfort, mobility, and premium race-day performance.</p>
+              <a href="kart-racing-suits.html" class="btn secondary">View Products</a>
+            </div>
+          </article>
 
-.site-footer {
-  margin-top: 40px;
-  border-top: 1px solid var(--line);
-  padding: 24px 0 40px;
-  color: var(--muted);
-}
-.footer-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.footer-links {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.footer-links a {
-  text-decoration: none;
-  color: var(--muted);
-}
+          <article class="card product-card">
+            <div class="product-image" style="background-image:url('https://raw.githubusercontent.com/gndentalinstrument-design/BUHASASPORTS/main/Copilot_20260624_134501.png');"></div>
+            <div class="product-body">
+              <h3>Kart Jacket</h3>
+              <p>Custom kart racing jackets featuring durable construction, brand styling, and a professional finish.</p>
+              <a href="kart-racing-gloves.html" class="btn secondary">View Products</a>
+            </div>
+          </article>
 
-@media (max-width: 900px) {
-  .hero-grid,
-  .category-grid,
-  .feature-grid,
-  .process-grid,
-  .product-grid,
-  .contact-grid,
-  .inline-list {
-    grid-template-columns: 1fr;
-  }
-  .navbar {
-    flex-direction: column;
-    justify-content: center;
-    padding: 16px 0;
-  }
-  .nav-links {
-    justify-content: center;
-  }
-  .hero-image {
-    height: 300px;
-  }
-}
+          <article class="card product-card">
+            <div class="product-image" style="background-image:url('https://raw.githubusercontent.com/gndentalinstrument-design/BUHASASPORTS/main/Copilot_20260624_135138.png');"></div>
+            <div class="product-body">
+              <h3>Racing Boots</h3>
+              <p>Premium kart boots for grip, protection, and reliable performance across track sessions.</p>
+              <a href="kart-racing-gloves.html" class="btn secondary">View Products</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-@media (max-width: 540px) {
-  .button-row, .tag-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  h1 { font-size: 2.4rem; }
-  .section-head { display: block; }
-}
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© 2025 BUHASA SPORTS</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="manufacturing.html">Manufacturing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
