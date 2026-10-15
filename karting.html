@@ -199,6 +199,30 @@
       border-color: rgba(255, 51, 71, 0.5);
     }
 
+    .product-card.featured {
+      border-color: rgba(255, 51, 71, 0.8);
+      box-shadow: 0 22px 42px rgba(229, 9, 20, 0.18), var(--shadow);
+      transform: translateY(-4px);
+    }
+
+    .product-card.featured .product-image {
+      height: 290px;
+    }
+
+    .product-card.featured .product-body {
+      padding-top: 20px;
+    }
+
+    .product-card.featured .product-tag {
+      background: rgba(255, 51, 71, 0.15);
+      border-color: rgba(255, 51, 71, 0.45);
+    }
+
+    .product-card.featured .btn {
+      background: linear-gradient(135deg, var(--red), var(--red-soft));
+      border: none;
+    }
+
     .product-image {
       height: 250px;
       background-size: cover;
@@ -309,6 +333,9 @@
       .product-grid {
         grid-template-columns: 1fr 1fr;
       }
+      .product-card.featured .product-image {
+        height: 270px;
+      }
     }
 
     @media (max-width: 620px) {
@@ -325,6 +352,9 @@
       }
       .page-header {
         padding-top: 44px;
+      }
+      .product-card.featured .product-image {
+        height: 260px;
       }
     }
   </style>
@@ -452,6 +482,21 @@
       </article>
 
       <article class="product-card">
+        <div class="product-image" style="background-image:url('https://raw.githubusercontent.com/gndentalinstrument-design/BUHASASPORTS/main/kart%20rib%20protector.png');"></div>
+        <div class="product-body">
+          <span class="product-tag">Accessories</span>
+          <h3>Rib Protectors</h3>
+          <p>Impact-focused protection for added confidence and comfort during aggressive driving and repeated track sessions.</p>
+          <ul class="feature-list">
+            <li>Impact-dissipating foam core</li>
+            <li>Ergonomic wrap-around fit</li>
+            <li>Breathable outer fabric</li>
+          </ul>
+          <a class="btn" href="kart-rib-protector.html">View Details</a>
+        </div>
+      </article>
+
+      <article class="product-card featured">
         <div class="product-image" style="background-image:url('https://raw.githubusercontent.com/gndentalinstrument-design/BUHASASPORTS/main/Kart%20Balaclava.png');"></div>
         <div class="product-body">
           <span class="product-tag">Accessories</span>
@@ -462,7 +507,7 @@
             <li>Secure fit</li>
             <li>Track-ready protection</li>
           </ul>
-          <a class="btn" href="contact.html">View Details</a>
+          <a class="btn" href="kart-balaclava.html">View Details</a>
         </div>
       </article>
 
