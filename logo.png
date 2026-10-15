@@ -1,2 +1,7 @@
-<div class="logo">BUHASA <span>SPORTS</span></div>
-
+<a href="#top" class="brand" aria-label="BUHASASPORTS home">
+  <img
+    src="https://raw.githubusercontent.com/gndentalinstrument-design/BUHASASPORTS/main/logo.png"
+    alt="BUHASASPORTS logo"
+    class="brand-logo"
+  />
+</a>
