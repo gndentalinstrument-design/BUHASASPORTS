@@ -28,7 +28,8 @@ body{
 .site-header{position:sticky; top:0; z-index:50; backdrop-filter:blur(8px);}
 .navbar{display:flex; align-items:center; justify-content:space-between; gap:18px; min-height:72px; padding:12px 0}
 .brand{display:inline-flex; align-items:center; gap:12px; text-decoration:none}
-.brand img{width:46px; height:46px; object-fit:contain}
+/* Unified logo sizing for the whole site: medium, consistent across pages */
+.brand img, .logo img, .navbar img { width:56px; height:auto; object-fit:contain; display:block }
 .brand-name{font-weight:700; letter-spacing:1px}
 .nav-links{display:flex; gap:20px; list-style:none; margin:0; padding:0}
 .nav-links a{color:var(--muted); text-decoration:none; font-size:13px; text-transform:uppercase; letter-spacing:1px}
@@ -105,4 +106,6 @@ body{
 @media (max-width:540px){
   .button-row, .tag-row {flex-direction:column; align-items:flex-start}
   .section-head{display:block}
+  /* slightly reduce logo on very small screens */
+  .brand img, .logo img, .navbar img { width:44px }
 }
