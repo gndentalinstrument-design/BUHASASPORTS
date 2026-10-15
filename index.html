@@ -5,13 +5,6 @@
     <title>BUHASA SPORTS – Kart Racing & Boxing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-    .logo img {
-    height: 50px;
-    width: auto;
-    display: block;
-}
-</style>
-
         :root {
             --bg-dark: #050608;
             --bg-carbon: #111317;
@@ -46,14 +39,14 @@
         }
 
         .logo {
-            font-size: 22px;
-            letter-spacing: 3px;
-            font-weight: bold;
-            color: var(--text-light);
+            display: flex;
+            align-items: center;
         }
 
-        .logo span {
-            color: var(--accent-red);
+        .logo img {
+            height: 50px;
+            width: auto;
+            display: block;
         }
 
         .nav-links {
@@ -235,10 +228,10 @@
             margin-bottom: 24px;
         }
 
-        .grid-3 {
+        .grid-2 {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 18px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
         }
 
         .card {
@@ -265,6 +258,7 @@
             margin-top: 8px;
             font-size: 13px;
             color: var(--text-muted);
+            margin-bottom: 12px;
         }
 
         /* FOOTER */
@@ -305,7 +299,7 @@
                 padding: 30px 20px;
             }
 
-            .grid-3 {
+            .grid-2 {
                 grid-template-columns: 1fr;
             }
 
@@ -320,13 +314,13 @@
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo">
-    <img src="logo.png" alt="BUHASA SPORTS Logo" style="height:50px;">
-</div>
-
+            <!-- Make sure logo.png exists in your repo -->
+            <img src="logo.png" alt="BUHASA SPORTS Logo">
+        </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="kart.html">Kart Racing</a></li>
-            <li><a href="boxing.html">Boxing</a></li>
+            <li><a href="karting.html">Karting Racewears</a></li>
+            <li><a href="boxing-equipment.html">Boxing Equipments</a></li>
             <li><a href="manufacturing.html">Manufacturing</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -349,8 +343,8 @@
             </div>
 
             <div class="hero-buttons">
-                <button class="btn-primary" onclick="location.href='kart.html'">View Kart Collection</button>
-                <button class="btn-secondary" onclick="location.href='boxing.html'">View Boxing Gear</button>
+                <button class="btn-primary" onclick="location.href='karting.html'">Karting Racewears</button>
+                <button class="btn-secondary" onclick="location.href='boxing-equipment.html'">Boxing Equipments</button>
             </div>
         </div>
 
@@ -376,38 +370,35 @@
         </div>
     </section>
 
-    <!-- CATEGORIES SECTION -->
+    <!-- MAIN PRODUCT CATEGORIES -->
     <section class="section">
-        <h2 class="section-title">BUHASA SPORTS CATEGORIES</h2>
+        <h2 class="section-title">Product Categories</h2>
         <p class="section-sub">
-            From kart racing circuits to boxing rings, BUHASA SPORTS delivers consistent quality, modern design,
-            and reliable manufacturing for performance‑driven athletes and brands.
+            Choose your main category to explore all sub-categories and products.
         </p>
 
-        <div class="grid-3">
+        <div class="grid-2">
+
+            <!-- KARTING MAIN CATEGORY -->
             <div class="card">
-                <div class="card-label">Kart Racing</div>
-                <div class="card-title">Racing Suits & Gloves</div>
+                <div class="card-label">Karting Racewears</div>
+                <div class="card-title">Professional Kart Racing Gear</div>
                 <p class="card-text">
-                    Custom kart racing suits, gloves, and accessories designed for comfort, safety, and aggressive track presence.
+                    Explore all kart racing gear including suits, gloves, shoes, rib protectors, teamwear, and accessories.
                 </p>
+                <button class="btn-primary" onclick="location.href='karting.html'">View Karting Categories</button>
             </div>
 
+            <!-- BOXING MAIN CATEGORY -->
             <div class="card">
-                <div class="card-label">Boxing</div>
-                <div class="card-title">Gloves, Pads & Protection</div>
+                <div class="card-label">Boxing Equipments</div>
+                <div class="card-title">Premium Boxing Gear</div>
                 <p class="card-text">
-                    Professional boxing gloves, focus pads, headgear, and protective equipment for training and competition.
+                    Explore all boxing equipment including gloves, headgear, pads, apparel, and training gear.
                 </p>
+                <button class="btn-primary" onclick="location.href='boxing-equipment.html'">View Boxing Categories</button>
             </div>
 
-            <div class="card">
-                <div class="card-label">Manufacturing</div>
-                <div class="card-title">OEM & Private Label</div>
-                <p class="card-text">
-                    Full manufacturing solutions for brands: custom designs, branding, labeling, and packaging for global export.
-                </p>
-            </div>
         </div>
     </section>
 
@@ -421,44 +412,3 @@
 
 </body>
 </html>
-<!-- CATEGORY SECTION -->
-<section class="section">
-    <h2 class="section-title">Our Product Categories</h2>
-    <p class="section-sub">
-        Explore our premium Karting Racewears and professional Boxing Equipments — engineered for performance, durability, and style.
-    </p>
-
-    <div class="grid-3">
-
-        <!-- KARTING CATEGORY -->
-        <div class="card">
-            <div class="card-label">Karting Racewears</div>
-            <div class="card-title">Racing Suits, Gloves & Accessories</div>
-            <p class="card-text">
-                FIA-inspired kart racing suits, gloves, shoes, rib protectors, and teamwear designed for maximum comfort and track performance.
-            </p>
-            <button class="btn-primary" onclick="location.href='kart.html'">View Karting Gear</button>
-        </div>
-
-        <!-- BOXING CATEGORY -->
-        <div class="card">
-            <div class="card-label">Boxing Equipments</div>
-            <div class="card-title">Gloves, Pads & Protective Gear</div>
-            <p class="card-text">
-                Professional boxing gloves, headgear, punching pads, groin guards, and training equipment built for fighters and coaches.
-            </p>
-            <button class="btn-primary" onclick="location.href='boxing.html'">View Boxing Gear</button>
-        </div>
-
-        <!-- MANUFACTURING CATEGORY -->
-        <div class="card">
-            <div class="card-label">OEM Manufacturing</div>
-            <div class="card-title">Private Label Production</div>
-            <p class="card-text">
-                Full OEM manufacturing solutions for brands worldwide — custom designs, embroidery, printing, and packaging.
-            </p>
-            <button class="btn-secondary" onclick="location.href='manufacturing.html'">Learn More</button>
-        </div>
-
-    </div>
-</section>
