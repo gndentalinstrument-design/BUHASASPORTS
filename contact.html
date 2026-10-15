@@ -2,412 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BUHASA SPORTS – Kart Racing & Boxing</title>
+    <title>Contact BUHASA SPORTS – Official Manufacturer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO META TAGS -->
+    <meta name="description" content="BUHASA SPORTS – Official manufacturer of Kart Racewears and Boxing Equipments. Contact our Pakistan HQ or UK/EU agent for OEM manufacturing, private label, and export services.">
+    <meta name="keywords" content="BUHASA SPORTS contact, boxing equipment manufacturer, kart racewear manufacturer, Sialkot sports manufacturer, OEM sportswear, private label sports gear, Pakistan sports factory">
+    <meta name="author" content="BUHASA SPORTS">
+
+    <!-- GOOGLE STRUCTURED DATA (SEO BOOST) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "BUHASA SPORTS",
+      "url": "https://buhasasports.com",
+      "logo": "https://buhasasports.com/logo.png",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+92-313-5774381",
+        "contactType": "Customer Service",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["English", "Urdu"]
+      }],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Moh, Darbar Pakka Garh P.O Kotli Behram",
+        "addressLocality": "Sialkot",
+        "postalCode": "51310",
+        "addressCountry": "Pakistan"
+      }
+    }
+    </script>
+
     <style>
-        :root {
-            --bg-dark: #050608;
-            --bg-carbon: #111317;
-            --accent-red: #e50914;
-            --accent-red-soft: #ff3347;
-            --text-light: #f5f5f5;
-            --text-muted: #b3b3b3;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: radial-gradient(circle at top, #1b1f27 0%, #050608 55%, #000000 100%);
-            color: var(--text-light);
-        }
-
-        /* NAVBAR */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 14px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(5, 6, 8, 0.92);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-        }
-
-        .logo {
-            font-size: 22px;
-            letter-spacing: 3px;
-            font-weight: bold;
-            color: var(--text-light);
-        }
-
-        .logo span {
-            color: var(--accent-red);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 24px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-muted);
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            transition: color 0.2s ease, border-bottom 0.2s ease;
-            padding-bottom: 4px;
-            border-bottom: 2px solid transparent;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-red-soft);
-            border-bottom: 2px solid var(--accent-red-soft);
-        }
-
-        /* HERO */
-        .hero {
-            min-height: 90vh;
-            padding: 120px 40px 60px;
-            display: grid;
-            grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-            gap: 40px;
-            align-items: center;
-        }
-
-        .hero-left h1 {
-            font-size: 40px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-
-        .hero-left h1 span {
-            color: var(--accent-red);
-        }
-
-        .hero-sub {
-            margin-top: 16px;
-            font-size: 16px;
-            color: var(--text-muted);
-            max-width: 520px;
-        }
-
-        .hero-tags {
-            margin-top: 18px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .tag {
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            padding: 6px 12px;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            border-radius: 999px;
-            color: var(--text-muted);
-        }
-
-        .hero-buttons {
-            margin-top: 26px;
-            display: flex;
-            gap: 14px;
-            flex-wrap: wrap;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent-red), var(--accent-red-soft));
-            color: #fff;
-            border: none;
-            padding: 12px 22px;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            border-radius: 999px;
-            cursor: pointer;
-            box-shadow: 0 8px 20px rgba(229, 9, 20, 0.35);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--text-light);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            padding: 12px 22px;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            border-radius: 999px;
-            cursor: pointer;
-        }
-
-        .hero-right {
-            background: radial-gradient(circle at top, #2a2f3a 0%, #111317 45%, #050608 100%);
-            border-radius: 18px;
-            padding: 22px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
-        }
-
-        .hero-image-box {
-            height: 260px;
-            border-radius: 14px;
-            background-image: linear-gradient(135deg, rgba(229, 9, 20, 0.35), rgba(0, 0, 0, 0.9)),
-                              url("https://images.pexels.com/photos/1120137/pexels-photo-1120137.jpeg");
-            background-size: cover;
-            background-position: center;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-image-label {
-            position: absolute;
-            bottom: 14px;
-            left: 16px;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: #fff;
-            background: rgba(0, 0, 0, 0.65);
-            padding: 6px 10px;
-            border-radius: 999px;
-        }
-
-        .hero-stats {
-            margin-top: 18px;
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
-        }
-
-        .stat-card {
-            flex: 1;
-            background: rgba(5, 6, 8, 0.9);
-            border-radius: 10px;
-            padding: 10px 12px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-        }
-
-        .stat-label {
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--text-muted);
-        }
-
-        .stat-value {
-            margin-top: 4px;
-            font-size: 16px;
-            font-weight: bold;
-            color: var(--accent-red-soft);
-        }
-
-        /* SECTIONS */
-        .section {
-            padding: 40px;
-        }
-
-        .section-title {
-            font-size: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 18px;
-        }
-
-        .section-sub {
-            font-size: 14px;
-            color: var(--text-muted);
-            max-width: 520px;
-            margin-bottom: 24px;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 18px;
-        }
-
-        .card {
-            background: var(--bg-carbon);
-            border-radius: 14px;
-            padding: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-        }
-
-        .card-label {
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--text-muted);
-        }
-
-        .card-title {
-            margin-top: 6px;
-            font-size: 15px;
-            font-weight: bold;
-        }
-
-        .card-text {
-            margin-top: 8px;
-            font-size: 13px;
-            color: var(--text-muted);
-        }
-
-        /* FOOTER */
-        footer {
-            padding: 24px 40px 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-            background: #050608;
-            font-size: 12px;
-            color: var(--text-muted);
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        footer a {
-            color: var(--accent-red-soft);
-            text-decoration: none;
-            font-size: 12px;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 900px) {
-            .hero {
-                grid-template-columns: 1fr;
-                padding: 110px 20px 40px;
-            }
-
-            .navbar {
-                padding: 12px 18px;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .section {
-                padding: 30px 20px;
-            }
-
-            .grid-3 {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-image-box {
-                height: 220px;
-            }
-        }
+        body { font-family: Arial; margin: 0; padding: 0; background: #050608; color: #fff; }
+        header { padding: 40px; text-align: center; background: #000; }
+        h1 { font-size: 36px; letter-spacing: 2px; }
+        section { padding: 40px; max-width: 900px; margin: auto; }
+        h2 { color: #ff3347; margin-bottom: 10px; }
+        p, li { color: #b3b3b3; font-size: 16px; line-height: 1.6; }
+        .contact-box { background: #111317; padding: 25px; border-radius: 12px; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.08); }
+        a { color: #ff3347; text-decoration: none; }
+        ul { margin-top: 10px; }
+        footer { text-align: center; padding: 20px; color: #b3b3b3; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; }
     </style>
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo">BUHASA <span>SPORTS</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="kart.html">Kart Racing</a></li>
-            <li><a href="boxing.html">Boxing</a></li>
-            <li><a href="manufacturing.html">Manufacturing</a></li>
-            <li><a href="contact.html">Contact</a></li>
+<header>
+    <h1>Contact BUHASA SPORTS</h1>
+    <p>Official Manufacturer of Kart Racewears & Boxing Equipments</p>
+</header>
+
+<section>
+
+    <!-- COMPANY CONTACT -->
+    <div class="contact-box">
+        <h2>Head Office – Pakistan</h2>
+        <p><strong>BUHASA SPORTS</strong></p>
+        <p>Moh, Darbar Pakka Garh<br>P.O Kotli Behram<br>Sialkot 51310, Pakistan</p>
+
+        <p><strong>Email:</strong> <a href="mailto:buhasasports@gmail.com">buhasasports@gmail.com</a></p>
+        <p><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/923135774381">+92-313-5774381</a></p>
+        <p><strong>Website:</strong> <a href="https://buhasasports.com">https://buhasasports.com</a></p>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="contact-box">
+        <h2>Official Certifications</h2>
+        <ul>
+            <li>Chamber of Commerce Certificate</li>
+            <li>Gloves Association Certification</li>
+            <li>ISO 9001:2006 Certified Manufacturer</li>
+            <li>EU Compliance Packaging Certificate</li>
+            <li>EU Responsible Manufacturer</li>
         </ul>
-    </header>
+    </div>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-left">
-            <h1>Premium <span>Kart Racing</span> & Boxing Gear</h1>
-            <p class="hero-sub">
-                BUHASA SPORTS manufactures high‑performance kart racing suits, gloves, and professional boxing equipment
-                for teams, clubs, and brands worldwide.
-            </p>
+    <!-- UK / EU AGENT -->
+    <div class="contact-box">
+        <h2>UK / EU Agent</h2>
+        <p>We have an official agent available in the United Kingdom and European Union for:</p>
+        <ul>
+            <li>OEM Manufacturing Support</li>
+            <li>Private Label Orders</li>
+            <li>Bulk Export Coordination</li>
+            <li>Quality Assurance & Inspection</li>
+        </ul>
+        <p>Contact us to be connected with our UK/EU representative.</p>
+    </div>
 
-            <div class="hero-tags">
-                <div class="tag">Kart Racing Suits</div>
-                <div class="tag">Boxing Gloves</div>
-                <div class="tag">OEM Manufacturing</div>
-                <div class="tag">Private Label</div>
-            </div>
+</section>
 
-            <div class="hero-buttons">
-                <button class="btn-primary" onclick="location.href='kart.html'">View Kart Collection</button>
-                <button class="btn-secondary" onclick="location.href='boxing.html'">View Boxing Gear</button>
-            </div>
-        </div>
-
-        <div class="hero-right">
-            <div class="hero-image-box">
-                <div class="hero-image-label">BUHASA SPORTS – Racing & Fight Gear</div>
-            </div>
-
-            <div class="hero-stats">
-                <div class="stat-card">
-                    <div class="stat-label">Kart Racing</div>
-                    <div class="stat-value">Pro Suits & Gloves</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Boxing</div>
-                    <div class="stat-value">Fight‑Ready Gear</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Manufacturing</div>
-                    <div class="stat-value">OEM / Private Label</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CATEGORIES SECTION -->
-    <section class="section">
-        <h2 class="section-title">BUHASA SPORTS CATEGORIES</h2>
-        <p class="section-sub">
-            From kart racing circuits to boxing rings, BUHASA SPORTS delivers consistent quality, modern design,
-            and reliable manufacturing for performance‑driven athletes and brands.
-        </p>
-
-        <div class="grid-3">
-            <div class="card">
-                <div class="card-label">Kart Racing</div>
-                <div class="card-title">Racing Suits & Gloves</div>
-                <p class="card-text">
-                    Custom kart racing suits, gloves, and accessories designed for comfort, safety, and aggressive track presence.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="card-label">Boxing</div>
-                <div class="card-title">Gloves, Pads & Protection</div>
-                <p class="card-text">
-                    Professional boxing gloves, focus pads, headgear, and protective equipment for training and competition.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="card-label">Manufacturing</div>
-                <div class="card-title">OEM & Private Label</div>
-                <p class="card-text">
-                    Full manufacturing solutions for brands: custom designs, branding, labeling, and packaging for global export.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div>© BUHASA SPORTS – Kart Racing & Boxing Equipment</div>
-        <div>
-            <a href="contact.html">Business & OEM Enquiries</a>
-        </div>
-    </footer>
+<footer>
+    © BUHASA SPORTS – Official Manufacturer of Kart Racewears & Boxing Equipments
+</footer>
 
 </body>
 </html>
