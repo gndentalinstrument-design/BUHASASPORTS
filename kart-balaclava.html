@@ -1,1 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kart Balaclava — BUHASA SPORTS</title>
+  <meta name="description" content="Lightweight, breathable karting balaclava for comfort and safety on the track. Available in multiple sizes." />
+  <style>
+    :root{--accent:#e63946;--muted:#6b6b6b;--max-width:1100px}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;color:#111;line-height:1.45}
+    .container{max-width:var(--max-width);margin:24px auto;padding:0 20px}
+    .grid{display:grid;grid-template-columns:1fr 420px;gap:28px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr} .sticky-aside{position:static}}
+    .gallery{background:#fafafa;padding:12px;border-radius:8px}
+    .hero{width:100%;aspect-ratio:4/3;object-fit:contain;border-radius:6px;cursor:zoom-in}
+    .thumbs{display:flex;gap:8px;margin-top:12px}
+    .thumbs img{width:72px;height:72px;object-fit:cover;border-radius:6px;cursor:pointer;border:2px solid transparent}
+    .thumbs img.active{border-color:var(--accent);opacity:0.95}
+    .sticky-aside{position:sticky;top:20px}
+    h1{font-size:1.5rem;margin:0 0 6px}
+    .price{font-size:1.25rem;color:var(--accent);font-weight:600;margin-bottom:8px}
+    .short-desc{color:var(--muted);margin-bottom:14px}
+    .actions{display:flex;gap:8px;align-items:center}
+    .btn{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:6px;cursor:pointer;font-weight:600}
+    .btn.secondary{background:#fff;border:1px solid #ddd;color:#111}
+    .specs{margin-top:18px;background:#fff;padding:14px;border-radius:8px;border:1px solid #f0f0f0}
+    .tabs{display:flex;gap:12px;margin-top:18px}
+    .tab{padding:8px 12px;border-radius:6px;background:#f6f6f6;cursor:pointer}
+    .tab.active{background:#fff;border:1px solid #eee}
+    .tab-content{margin-top:12px}
+    .meta{font-size:0.9rem;color:#666;margin-top:12px}
+    footer{margin:48px 0 16px;color:#777;font-size:0.9rem;text-align:center}
+    /* Lightbox */
+    .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);align-items:center;justify-content:center;z-index:9999}
+    .lightbox img{max-width:95%;max-height:90%;border-radius:6px}
+    .lightbox.show{display:flex}
+    .close-x{position:absolute;right:20px;top:18px;color:#fff;font-size:22px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+      <!-- LEFT: Gallery and description -->
+      <div>
+        <div class="gallery">
+          <!-- Hero image: replace the src with your main balaclava image -->
+          <img id="heroImg" class="hero" src="IMAGE_URL_MAIN" alt="Kart Balaclava — front view" />
+          <div class="thumbs" id="thumbs">
+            <!-- Replace these with your actual image URLs; keep order as you like -->
+            <img data-full="IMAGE_URL_MAIN" src="IMAGE_URL_MAIN" alt="Balaclava view 1" class="active" />
+            <img data-full="IMAGE_URL_2" src="IMAGE_URL_2" alt="Balaclava view 2" />
+            <img data-full="IMAGE_URL_3" src="IMAGE_URL_3" alt="Balaclava view 3" />
+            <!-- Add more thumbnails as needed -->
+          </div>
+        </div>
 
+        <div class="tabs" aria-label="Product tabs">
+          <div class="tab active" data-tab="details">Details</div>
+          <div class="tab" data-tab="specs">Specs</div>
+          <div class="tab" data-tab="shipping">Shipping</div>
+        </div>
+
+        <div class="tab-content" id="tab-content">
+          <div data-panel="details">
+            <h2 style="margin:8px 0 6px">Product details</h2>
+            <p class="short-desc">A lightweight, fire-resistant karting balaclava that provides breathability and comfort under your helmet. One size fits most; available in different colors.</p>
+            <ul>
+              <li>Material: 100% Nomex® / breathable knit</li>
+              <li>Low-profile seams for comfort</li>
+              <li>Complies with standard karting safety regulations</li>
+            </ul>
+          </div>
+          <div data-panel="specs" style="display:none">
+            <h3>Technical specifications</h3>
+            <table style="width:100%;border-collapse:collapse">
+              <tr><td style="padding:6px 0;color:#444">Material</td><td style="padding:6px 0;color:#666">Nomex® knit</td></tr>
+              <tr><td style="padding:6px 0;color:#444">Weight</td><td style="padding:6px 0;color:#666">~35g</td></tr>
+              <tr><td style="padding:6px 0;color:#444">Sizes</td><td style="padding:6px 0;color:#666">S / M / L / XL</td></tr>
+            </table>
+          </div>
+          <div data-panel="shipping" style="display:none">
+            <h3>Shipping & returns</h3>
+            <p class="meta">Standard shipping 3–7 business days. Returns accepted within 30 days in original condition.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Purchase box -->
+      <aside class="sticky-aside">
+        <div style="background:#fff;padding:18px;border-radius:8px;border:1px solid #f0f0f0">
+          <h1>Kart Balaclava</h1>
+          <div class="price">$29.99</div>
+          <div class="short-desc">Comfortable breathability under your helmet. Flame-resistant options available.</div>
+
+          <div style="margin-top:10px">
+            <label for="size" style="display:block;margin-bottom:6px;color:#333">Size</label>
+            <select id="size" style="width:100%;padding:10px;border-radius:6px;border:1px solid #ddd">
+              <option value="s">Small</option>
+              <option value="m" selected>Medium</option>
+              <option value="l">Large</option>
+              <option value="xl">XL</option>
+            </select>
+          </div>
+
+          <div class="actions" style="margin-top:12px">
+            <button id="addToCart" class="btn">Add to cart</button>
+            <button id="buyNow" class="btn secondary">Buy now</button>
+          </div>
+
+          <div class="specs">
+            <strong>Why choose this balaclava?</strong>
+            <p style="margin:8px 0 0;color:#555">Breathable, low-profile, and tested for track use. Comfortable under helmets for long sessions.</p>
+          </div>
+
+          <div class="meta">SKU: BAL-001<br/>Category: Karting Apparel</div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>© BUHASA SPORTS — high performance karting gear</footer>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+    <span class="close-x" id="lightClose" aria-label="Close">✕</span>
+    <img id="lightImg" src="" alt="Zoomed product view" />
+  </div>
+
+  <script>
+    // Gallery behavior
+    const hero = document.getElementById('heroImg');
+    const thumbs = document.getElementById('thumbs');
+    const lightbox = document.getElementById('lightbox');
+    const lightImg = document.getElementById('lightImg');
+    const lightClose = document.getElementById('lightClose');
+
+    thumbs.addEventListener('click', (e) => {
+      const t = e.target.closest('img');
+      if (!t) return;
+      // set active class
+      Array.from(thumbs.querySelectorAll('img')).forEach(img=>img.classList.remove('active'));
+      t.classList.add('active');
+      const full = t.getAttribute('data-full');
+      hero.src = full;
+      hero.alt = t.alt || 'Product image';
+    });
+
+    // Open lightbox when hero clicked
+    hero.addEventListener('click', () => {
+      lightImg.src = hero.src;
+      lightbox.classList.add('show');
+      lightbox.setAttribute('aria-hidden','false');
+    });
+    lightClose.addEventListener('click', ()=>{ lightbox.classList.remove('show'); lightbox.setAttribute('aria-hidden','true'); });
+    lightbox.addEventListener('click', (e)=>{ if (e.target === lightbox) { lightbox.classList.remove('show'); lightbox.setAttribute('aria-hidden','true'); }});
+
+    // Tabs
+    document.querySelectorAll('.tab').forEach(tab=>{
+      tab.addEventListener('click', ()=> {
+        document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+        tab.classList.add('active');
+        const panel = tab.getAttribute('data-tab');
+        document.querySelectorAll('[data-panel]').forEach(p=>{
+          p.style.display = (p.getAttribute('data-panel') === panel) ? '' : 'none';
+        });
+      });
+    });
+
+    // Minimal add-to-cart/buy actions (placeholder)
+    document.getElementById('addToCart').addEventListener('click', ()=>{
+      const size = document.getElementById('size').value;
+      alert('Added to cart: Kart Balaclava — size ' + size + '\\n(Connect this button to your cart backend.)');
+    });
+    document.getElementById('buyNow').addEventListener('click', ()=>{
+      alert('Proceed to checkout (wire this to your checkout flow).');
+    });
+  </script>
+</body>
+</html>
