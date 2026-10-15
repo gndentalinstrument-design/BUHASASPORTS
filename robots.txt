@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://buhasasports.com/</loc>
+  </url>
+  <url>
+    <loc>https://buhasasports.com/index.html</loc>
+  </url>
+  <url>
+    <loc>https://buhasasports.com/karting.html</loc>
+  </url>
+  <url>
+    <loc>https://buhasasports.com/boxing-equipment.html</loc>
+  </url>
+  <url>
+    <loc>https://buhasasports.com/manufacturing.html</loc>
+  </url>
+  <url>
+    <loc>https://buhasasports.com/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://buhasasports.com/kart-racing-suits.html</loc>
+  </url>
+  <url>
+    <loc>https://buhasasports.com/kart-racing-gloves.html</loc>
+  </url>
+  <url>
+    <loc>https://buhasasports.com/boxing-gloves.html</loc>
+  </url>
+  <url>
+    <loc>https://buhasasports.com/boxing-headgear.html</loc>
+  </url>
+  <url>
+    <loc>https://buhasasports.com/boxing-bags.html</loc>
+  </url>
+</urlset>

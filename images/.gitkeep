@@ -1,0 +1,20 @@
+# BUHASA SPORTS
+
+This repository contains a static website for BUHASA SPORTS featuring kart racewears and boxing equipment.
+
+## Pages included
+- index.html
+- karting.html
+- boxing-equipment.html
+- manufacturing.html
+- contact.html
+- kart-racing-suits.html
+- kart-racing-gloves.html
+- boxing-gloves.html
+- boxing-headgear.html
+- boxing-bags.html
+
+## Notes
+- Uses the uploaded `logo.png` on the site header.
+- Includes basic SEO metadata and sitemap files.
+- Product category pages use remote product imagery for presentation.

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boxing Bags | BUHASA SPORTS</title>
+  <meta name="description" content="Punching bags and boxing training equipment by BUHASA SPORTS.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="BUHASA SPORTS home">
+        <img src="logo.png" alt="BUHASA SPORTS logo">
+        <span class="brand-name">BUHASA SPORTS</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="karting.html">Karting</a></li>
+          <li><a href="boxing-equipment.html">Boxing</a></li>
+          <li><a href="manufacturing.html">Manufacturing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <div class="eyebrow">Boxing</div>
+        <h1>Punching Bags</h1>
+        <p>Durable training bags designed for power, timing, and conditioning.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container product-grid">
+        <article class="card product-card">
+          <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="product-body">
+            <h3>Heavy Bags</h3>
+            <p>High-durability heavy bags for power training, defense work, and conditioning.</p>
+          </div>
+        </article>
+        <article class="card product-card">
+          <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="product-body">
+            <h3>Freestanding Bags</h3>
+            <p>Flexible, home-training-friendly structures built for movement and rhythm work.</p>
+          </div>
+        </article>
+        <article class="card product-card">
+          <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="product-body">
+            <h3>Speed Bags</h3>
+            <p>High-speed striking bags built for timing, rhythm, and hand-eye coordination.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© 2025 BUHASA SPORTS</div>
+      <div class="footer-links">
+        <a href="boxing-equipment.html">Back to Boxing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
